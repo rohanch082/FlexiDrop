@@ -1,0 +1,409 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f6c9c9;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    height: 15%;
+    width: 100%;
+    /* background-color: #01013b; */
+    background: linear-gradient(90deg, #01013b, #2c2cff);
+    color: white;   
+    position: fixed;
+    display: flex;
+    align-items: center; /* Center vertically */
+    /* justify-content: center; Center horizontally */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    z-index: 1000;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header h1{
+    font-size: 2.2em;
+    padding-left: 20px;
+}
+#header .text:hover, #header .icon:hover {
+    color: rgba(26, 215, 240, 0.952);
+    transform: scale(1.1);
+}
+#searchbox {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    outline: none;
+    height: 35px;
+    width: 350px;
+    transition: width 0.3s ease;
+
+}
+#searchbox:focus {
+    /* width: 400px; */
+    border-color: #06b6d4;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* .login-btn {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+} */
+
+/* =============PROFILE DROPDOWN================ */
+
+.profile-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 25px; /* adjust depending on header height */
+  right: 0;
+  background: rgba(255, 255, 255, 0.402);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.profile-dropdown p {
+  margin: 8px 0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.profile-dropdown a {
+  color: #080808;
+  text-decoration: none;
+}
+
+.profile-dropdown p:hover {
+  transform: translateX(5px);
+  color: #00f0ff;
+}
+
+/* Show dropdown on hover */
+.profile-menu:hover .profile-dropdown {
+  display: flex;
+}
+
+
+
+
+#fakeheader{
+    height: 15%;
+    width: 100%;
+}
+
+
+
+#page1{
+  height: 85%;
+  width: 100%;
+  background-color: white;
+}
+
+#banner img{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categories{
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.section{
+    height: 90%;
+    width: 10%;
+    /* height: 120px;
+    width: 120px; */
+    background-color: rgb(247, 231, 181);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+    
+}
+.section:hover{
+    transform: scale(1.05);
+}
+.section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+} 
+h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#Trending{
+    height: 75%;
+    width: 100%;
+    background-color: white;
+    /* rgb(250, 69, 168) */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth;
+    flex-shrink: 0;
+}
+#Trending::-webkit-scrollbar {
+    /* height: 8px; */
+    display: none;
+}
+
+#Trending img{
+    height: 60%;
+    width: 80%;
+    object-fit: contain;
+}
+#Trending .item:hover{
+    transform: scale(1.05);
+}
+#Trending .item{
+    height: 87%;
+    /* height: 95%; */
+    width: 22%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid black;
+    flex: 0 0 auto; /* ✅ keeps each card fixed width */
+
+}
+#Trending .item img{
+    height: 75%;
+    width: 90%;
+    object-fit: contain;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.item h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0px 0 0px;
+}
+.item button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+#page2{
+  height: 85%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#blank{
+    height: 48%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#NewArrivals{
+    height: 52%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* overflow-x: auto; 
+    scroll-behavior: smooth;
+    flex-shrink: 0; */
+}
+
+.box1{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    margin: 10px;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.box2{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#NewArrivals .card{
+    height: 95%;
+    width: 30%;
+    background-color: white;
+    /* rgb(250, 69, 168) */
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 11px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#NewArrivals .card img{
+    height: 70%;
+    width: 90%;
+    object-fit: contain;
+    /* padding-bottom: 10px; */
+    /* padding-top: 10px; */
+}
+
+#NewArrivals .card:hover{
+    transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0px 0 0px;
+}
+.card button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Footer Styles */
+/* ================= FOOTER ================= */
+#footer{
+
+    background-color: white;
+    color: black;
+    padding: 120px 40px 20px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-box h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-box p,
+.footer-box li{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #030303;
+}
+
+.footer-box ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li{
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-box ul li a:hover{
+    color: #360b91;
+}
+
+.social-icons{
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.social-icons i{
+    cursor: pointer;
+    color: #ccc;
+}
+
+.social-icons i:hover{
+    color: #151111;
+}
+
+hr{
+    margin: 30px 0 15px;
+    border: 0.5px solid #333;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 13px;
+    color: #030303;
+}

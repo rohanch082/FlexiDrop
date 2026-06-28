@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexiDrop | Payment</title>
+  <link rel="stylesheet" href="payment.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="payment-container">
+    <h1>Complete Your Payment</h1>
+
+    <!-- ORDER SUMMARY -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <div class="summary-details">
+        <p>Subtotal: <span id="subtotal">₹0</span></p>
+        <p>Discount: <span id="discount">₹0</span></p>
+        <hr>
+        <p><strong>Total: <span id="total">₹0</span></strong></p>
+      </div>
+    </div>
+
+    <!-- PAYMENT OPTIONS -->
+    <div class="payment-methods">
+      <h2>Select Payment Method</h2>
+      <label><input type="radio" name="payment" value="card" checked> Credit / Debit Card</label>
+      <label><input type="radio" name="payment" value="upi"> UPI</label>
+      <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+    </div>
+
+    <!-- CARD PAYMENT FORM -->
+    <div class="card-form">
+      <h3>Enter Card Details</h3>
+      <input type="text" id="card-name" placeholder="Cardholder Name">
+      <input type="text" id="card-number" placeholder="Card Number">
+      <div class="row">
+        <input type="text" id="card-expiry" placeholder="MM/YY">
+        <input type="text" id="card-cvv" placeholder="CVV">
+      </div>
+    </div>
+
+    <!-- UPI FORM -->
+    <div class="upi-form hidden">
+      <h3>Enter UPI ID</h3>
+      <input type="text" id="upi-id" placeholder="example@upi">
+    </div>
+
+    <!-- COD MESSAGE -->
+    <div class="cod-msg hidden">
+      <h3>You can pay in cash upon delivery 💵</h3>
+    </div>
+
+    <button id="pay-btn">Proceed to Pay</button>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexiDrop | Jewellery</title>
+  <link rel="stylesheet" href="jewellery.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="jewellery-header">
+  <h1>FlexiDrop</h1>
+  <input type="text" id="searchJewellery" placeholder="Search jewellery...">
+  <div class="cart">
+    <a href="../Cart/cart.html">
+      <i class="ri-shopping-cart-fill"></i>
+      <span id="cartCount">0</span>
+    </a>
+  </div>
+</header>
+
+<!-- JEWELLERY SECTION -->
+<section id="jewellery-section">
+  <h2>Jewellery Collection</h2>
+
+  <div class="jewellery-container">
+
+    <!-- 10 JEWELLERY CARDS -->
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1610223515982-5bae48b7c2c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZCUyMG5lY2tsYWNlfGVufDB8MnwwfHx8MA%3D%3D">
+      <h3>Gold Necklace</h3>
+      <p class="price">₹4999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1605100804567-1ffe942b5cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlhbW9uZCUyMHJpbmd8ZW58MHwyfDB8fHww">
+      <h3>Diamond Ring</h3>
+      <p class="price">₹7999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1722410180651-efd51636f260?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYWRpdGlvbmFsJTIwZWFycmluZ3xlbnwwfDJ8MHx8fDA%3D">
+      <h3>Traditional Earrings</h3>
+      <p class="price">₹1999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1721103428054-6bcf4f655594?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsdmVyJTIwYnJhY2VsZXR8ZW58MHwyfDB8fHww">
+      <h3>Silver Bracelet</h3>
+      <p class="price">₹2499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1727947310763-db5d85bd940c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNob2tlciUyMG5lY2tsYWNlfGVufDB8MnwwfHx8MA%3D%3D">
+      <h3>Choker Necklace</h3>
+      <p class="price">₹1799</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1704637397679-f37e5e0dc429?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVhcmwlMjBlYXJyaW5nfGVufDB8MnwwfHx8MA%3D%3D">
+      <h3>Pearl Earrings</h3>
+      <p class="price">₹2299</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://media.istockphoto.com/id/1181600648/photo/gold-bangles-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=06-7m6tER2ESvQKxuqSYvc26gG9-jXanJ4cuv6ftF_U=">
+      <h3>Gold Bangles</h3>
+      <p class="price">₹3499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="data:image/jpeg;base64,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">
+      <h3>Stud Earrings</h3>
+      <p class="price">₹999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1682822749962-d4510e0467fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.
+      1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y291cGxlJTIwcmluZ3N8ZW58MHwyfDB8fHww">
+      <h3>Couple Rings</h3>
+      <p class="price">₹2799</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="jewellery-card">
+      <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&auto=format&fit=crop&q=60">
+      <h3>Oxidised Jewellery Set</h3>
+      <p class="price">₹1999</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<script src="jewellery.js"></script>
+</body>
+</html>

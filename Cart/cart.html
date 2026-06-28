@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart | FlexiDrop</title>
+  <link rel="stylesheet" href="cart.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="cart-header">
+    <h1>🛍️ FlexiDrop Cart</h1>
+    <a href="../Home/home.html" class="back-home"><i class="ri-home-4-line"></i> Home</a>
+  </header>
+
+  <main class="cart-container">
+    <section class="cart-items">
+
+      <!-- 🧤 Product 1 -->
+      <div class="cart-item">
+        <img src="https://m.media-amazon.com/images/I/61mGvKfZ-pL._SX679_.jpg" alt="Headphones">
+        <div class="item-details">
+          <h3>Wireless Headphones</h3>
+          <p class="desc">Noise-cancelling, Bluetooth 5.3</p>
+          <div class="quantity">
+            <button class="qty-btn decrease">-</button>
+            <span class="qty">1</span>
+            <button class="qty-btn increase">+</button>
+          </div>
+        </div>
+        <div class="item-price">
+          <p>₹2,499</p>
+          <i class="ri-delete-bin-6-line remove"></i>
+        </div>
+      </div>
+
+      <!-- 👕 Product 2 -->
+      <div class="cart-item">
+        <img src="https://m.media-amazon.com/images/I/71-7sD2CkUL._SY679_.jpg" alt="T-shirt">
+        <div class="item-details">
+          <h3>Men’s Casual T-Shirt</h3>
+          <p class="desc">Cotton | Blue</p>
+          <div class="quantity">
+            <button class="qty-btn decrease">-</button>
+            <span class="qty">2</span>
+            <button class="qty-btn increase">+</button>
+          </div>
+        </div>
+        <div class="item-price">
+          <p>₹999</p>
+          <i class="ri-delete-bin-6-line remove"></i>
+        </div>
+      </div>
+        <!-- 📱 Product 3 -->
+        <div class="cart-item">
+        <img src="https://m.media-amazon.com/images/I/51bRz3YkW-L._SX679_.jpg" alt="Phone Case">
+        <div class="item-details">
+          <h3>Smartphone Protective Case</h3>
+          <p class="desc">Shockproof | Black</p>
+          <div class="quantity">
+            <button class="qty-btn decrease">-</button>
+            <span class="qty">1</span>
+            <button class="qty-btn increase">+</button>
+          </div>
+
+    </section>
+
+    <section class="cart-summary">
+      <h2>Order Summary</h2>
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <span id="subtotal">₹4,497</span>
+      </div>
+      <div class="summary-line">
+        <span>Discount</span>
+        <span id="discount">-₹300</span>
+      </div>
+      <div class="summary-line total">
+        <span>Total</span>
+        <span id="total">₹4,197</span>
+      </div>
+
+      <div id="deliveryAddress">
+        <a href="../Address/address.html" id="addAddressLink">
+          + Add Delivery Address
+        </a>
+      </div>
+
+       <button id="checkout-btn">Proceed to Checkout</button>
+
+    </section>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

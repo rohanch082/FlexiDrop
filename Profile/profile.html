@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | FlexiDrop</title>
+  <link rel="stylesheet" href="profile.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="profile-container">
+    <header class="profile-header">
+      <h1>FlexiDrop</h1>
+      <button class="logout-btn" id="logoutBtn">
+        <i class="ri-logout-box-r-line"></i> Logout
+      </button>
+    </header>
+
+    <section class="profile-card">
+      <div class="profile-pic">
+        <img src="https://i.pinimg.com/736x/d1/43/08/d14308c38a18a9a742a7b4d1b69a4f8b.jpg" alt="User">
+        <label for="uploadPic" class="edit-icon"><i class="ri-camera-line"></i></label>
+        <input type="file" id="uploadPic" hidden>
+      </div>
+
+      <h2 id="username">Rohan</h2>
+      <p class="user-email" id="userEmail">rohan@example.com</p>
+
+      <div class="user-info">
+        <div class="info-box">
+          <i class="ri-map-pin-line"></i>
+          <p>Delhi, India</p>
+        </div>
+        <div class="info-box">
+          <i class="ri-phone-line"></i>
+          <p>+91 9876543210</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="orders-section">
+      <h3>Recent Orders</h3>
+      <div class="orders-grid">
+        <div class="order-card">
+          <i class="ri-shopping-bag-3-line"></i>
+          <p>Wireless Headphones</p>
+          <span class="status delivered">Delivered</span>
+        </div>
+
+        <div class="order-card">
+          <i class="ri-t-shirt-line"></i>
+          <p>Casual T-Shirt</p>
+          <span class="status shipped">Shipped</span>
+        </div>
+
+        <div class="order-card">
+          <i class="ri-smartphone-line"></i>
+          <p>Mobile Case</p>
+          <span class="status processing">Processing</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
