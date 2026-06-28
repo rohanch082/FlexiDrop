@@ -70,5 +70,5 @@ payBtn.addEventListener("click", () => {
   localStorage.removeItem("cart");
 
   alert("✅ Payment Successful! Thank you for shopping with FlexiDrop.");
-  window.location.href = "../Home/home.html";
+  window.location.href = "../index.html";
 });
