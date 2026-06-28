@@ -152,7 +152,7 @@ a {
     width: 10%;
     /* height: 120px;
     width: 120px; */
-    background-color: rgb(247, 231, 181);
+    background-color: white;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
